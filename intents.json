@@ -1,0 +1,1020 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much"],
+        "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
+     "responses": ["I'm BMZ, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm BMZ, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm BMZ. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me BMZ.", "I'm BMZ!", "Call me BMZ"]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?"],
+        "responses": ["I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by >.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone"],
+    "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+    },
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression"],
+        "responses": ["It helps to talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."]
+    },
+    {"tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
+        "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"]
+    },
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."]
+    },
+    {"tag": "sleep",
+        "patterns": ["I have insominia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days."],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend passed away"],
+        "responses": ["I'm sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "My condolences. I'm here if you need to talk."]
+    },
+    {"tag": "understand",
+        "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me", "Nobody understands me."],
+        "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    {"tag": "suicide",
+        "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."]
+    }, 
+    {"tag": "hate-you",
+        "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+        "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"]
+    },
+    {"tag": "hate-me",
+        "patterns": ["You hate me", "I know you hate me", "You don't like me"],
+        "responses": ["Why do you think so?", "I'm sorry if i have exhibited any sort of behaviour to make you think that."]
+    },
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },
+    {"tag": "jokes",
+        "patterns": ["Tell me a joke", "Tell me another joke"],
+        "responses": ["mental health is not a joke."]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "location",
+        "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
+        "responses": ["Duh I live in your computer", "Everywhere", "Somewhere in the universe" ]
+    },
+    {"tag": "something-else",
+        "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
+        "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"]
+    },
+    {"tag": "friends",
+        "patterns": ["I don't have any friends"],
+        "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"]
+    },
+    {"tag": "ask",
+        "patterns": ["Can I ask you something?"],
+        "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
+    },
+    {"tag": "problem",
+        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
+        "responses": ["I see. Have you taken any approaches to not feel this way?"]
+    },
+    {"tag": "no-approach",
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+        "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
+    },
+    {"tag": "learn-more",
+            "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
+        "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."]
+    },
+    {"tag": "user-agree",
+        "patterns": ["yeah you're right. i deserve a break.", "Yeah you're absolutely right about that"],
+        "responses": ["Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."]
+    },
+    {"tag": "meditation",
+        "patterns": ["hmmm that sounds like it could be useful to me.", "That sounds useful."],
+        "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."]
+    },
+    {"tag": "user-meditation",
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
+        "responses": ["Your welcome. Remember: Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."]
+    },
+    {"tag": "pandora-useful",
+        "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
+        "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
+    },
+    {"tag": "user-advice",
+        "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
+        "responses": ["Sure. What can I do to help?", "Okay what do you need advice on?"]
+    },
+    {"tag": "learn-mental-health",
+        "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health."],
+        "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."]
+    },
+    {"tag": "mental-health-fact",
+        "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
+        "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
+    },
+    {"tag": "fact-1",
+        "patterns": ["What is mental health?", "Define Mental Health"],
+        "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."]
+    },
+    {"tag": "fact-2",
+        "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+        "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."]
+    },
+    {"tag": "fact-3",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+    {"tag": "fact-5",
+        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+        "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
+    },
+    {"tag": "fact-6",
+        "patterns": ["What is a therapist?", "What does a therapist do?"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "]
+    },
+    {"tag": "fact-7",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."]
+    },
+    {"tag": "fact-8",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+    {"tag": "fact-9",
+        "patterns": ["Who does mental illness affect?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-10",
+        "patterns": ["What causes mental illness?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-11",
+        "patterns": ["What are some of the warning signs of mental illness?"],
+        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"]
+    },
+    {"tag": "fact-12",
+        "patterns": ["Can people with mental illness recover?"],
+        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]
+    },
+    {"tag": "fact-13",
+        "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+        "responses": ["Although Pandora cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+    },
+    {"tag": "fact-14",
+        "patterns": ["How can I find a mental health professional for myself or my child?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."]
+    },
+    {"tag": "fact-15",
+        "patterns": ["What treatment options are available?"],
+        "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."]
+    },
+    {"tag": "fact-16",
+        "patterns": ["If I become involved in treatment, what do I need to know?"],
+        "responses": ["Since beginning treatment is a big step for individuals and families, it can be very overwhelming. It is important to be as involved and engaged in the treatment process as possible. Some questions you will need to have answered include:\n What is known about the cause of this particular illness?\n Are there other diagnoses where these symptoms are common?\n Do you normally include a physical or neurological examination?\n Are there any additional tests or exams that you would recommend at this point?\n Would you advise an independent opinion from another psychiatrist at this point?\n What program of treatment is the most helpful with this diagnosis?\n Will this program involve services by other specialists? If so, who will be responsible for coordinating these services?\n What do you see as the family's role in this program of treatment?\n How much access will the family have to the individuals who are providing the treatment?\n What medications are generally used with this diagnosis?\n How much experience do you have in treating individuals with this illness?\n What can I do to help you in the treatment?"]
+    },
+    {"tag": "fact-17",
+        "patterns": ["What is the difference between mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "fact-18",
+        "patterns": ["How can I find a mental health professional right for my child or myself?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "fact-19",
+        "patterns": ["Where else can I get help?"],
+        "responses": ["Where you go for help will depend on the nature of the problem and/or symptoms and what best fits you. Often, the best place to start is by talking with someone you trust about your concerns, such as a family member, friend, clergy, healthcare provider, or other professionals. Having this social support is essential in healing from mental illness, and you will be able to ask them for referrals or recommendations for trusted mental health practitioners. Search for mental health resources in your area. Secondly, there are people and places throughout the country that provide services to talk, to listen, and to help you on your journey to recovery. Thirdly, many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members, and friends. Some support groups are peer led while others may be led by a mental health professional."]
+    },
+    {"tag": "fact-20",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["The best source of information regarding medications is the physician prescribing them. He or she should be able to answer questions such as:    \n1. What is the medication supposed to do? \n2. When should it begin to take effect, and how will I know when it is effective? \n3. How is the medication taken and for how long? What food, drinks, other medicines, and activities should be avoided while taking this medication? \n4. What are the side effects and what should be done if they occur? \n5. What do I do if a dose is missed? \n6. Is there any written information available about this medication? \n7. Are there other medications that might be appropriate? \n8. If so, why do you prefer the one you have chosen? \n9. How do you monitor medications and what symptoms indicate that they should be raised, lowered, or changed? \n10. All medications should be taken as directed. Most medications for mental illnesses do not work when taken irregularly, and extra doses can cause severe, sometimes dangerous side effects. Many psychiatric medications begin to have a beneficial effect only after they have been taken for several weeks."]
+    },
+    {"tag": "fact-21",
+        "patterns": ["Where can I go to find therapy?"],
+        "responses": ["Different kinds of therapy are more effective based on the nature of the mental health condition and/or symptoms and the person who has them (for example, children will benefit from a therapist who specializes in childrenâ€™s mental health). However, there are several different types of treatment and therapy that can help."]
+    },
+    {"tag": "fact-22",
+        "patterns": ["Where can I learn about types of mental health treatment?"],
+        "responses": ["Mental health conditions are often treated with medication, therapy or a combination of the two. However, there are many different types of treatment available, including Complementary & Alternative Treatments, self-help plans, and peer support. Treatments are very personal and should be discussed by the person with the mental health conditions and his or her team."]
+    },
+    {"tag": "fact-23",
+        "patterns": ["What are the different types of mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. Finding the right one for you may require some research."]
+    },
+    {"tag": "fact-24",
+        "patterns": ["Where can I go to find a support group?"],
+        "responses": ["Many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members and friends. Some support groups are peer-led, while others may be led by a mental health professional."]
+    },
+    {"tag": "fact-25",
+        "patterns": ["Can you prevent mental health problems?"],
+        "responses": ["We can all suffer from mental health challenges, but developing our wellbeing, resilience, and seeking help early can help prevent challenges becoming serious."]
+    },
+    {"tag": "fact-26",
+        "patterns": ["Are there cures for mental health problems?", "is there any cure for mental health problems?"],
+        "responses": ["It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help."]
+    },
+    {"tag": "fact-27",
+        "patterns": ["What causes mental health problems?"],
+        "responses": ["Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."]
+    },
+    {"tag": "fact-28",
+        "patterns": ["What do I do if I'm worried about my mental health?"],
+        "responses": ["The most important thing is to talk to someone you trust. This might be a friend, colleague, family member, or GP. In addition to talking to someone, it may be useful to find out more information about what you are experiencing. These things may help to get some perspective on what you are experiencing, and be the start of getting help."]
+    },
+    {"tag": "fact-29",
+        "patterns": ["How do I know if I'm unwell?"],
+        "responses": ["If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help."]
+    },
+    {"tag": "fact-30",
+        "patterns": ["How can I maintain social connections? What if I feel lonely?"],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone."]
+    },
+    {"tag": "fact-31",
+        "patterns": ["What's the difference between anxiety and stress?"],
+        "responses": ["Stress and anxiety are often used interchangeably, and there is overlap between stress and anxiety. Stress is related to the same fight, flight, or freeze response as anxiety, and the physical sensations of anxiety and stress may be very similar. The cause of stress and anxiety are usually different, however. Stress focuses on mainly external pressures on us that we're finding hard to cope with. When we are stressed, we usually know what we're stressed about, and the symptoms of stress typically disappear after the stressful situation is over. Anxiety, on the other hand, isn't always as easy to figure out. Anxiety focuses on worries or fears about things that could threaten us, as well as anxiety about the anxiety itself. Stress and anxiety are both part of being human, but both can be problems if they last for a long time or have an impact on our well-being or daily life."]
+    },
+    {"tag": "fact-32",
+        "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
+        "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."]
+    },
+    {
+        "tag": "books",
+        "patterns": ["Recommend a book", "Tell me about your favorite book", "Book suggestions"],
+        "responses": ["While I don't have personal favorites, I can recommend books based on your interests. What genre or topic are you interested in?", "Books open new worlds. Is there a specific genre or theme you're looking for in a book recommendation?"]
+      },
+      {
+        "tag": "movies",
+        "patterns": ["Recommend a movie", "What's your favorite film?", "Movie suggestions"],
+        "responses": ["I don't have personal favorites, but I can suggest movies based on your preferences. What genre or type of movie are you in the mood for?", "While I don't watch movies, I can help you find a great film to enjoy. What genre or theme are you interested in?"]
+      },
+      {
+        "tag": "health",
+        "patterns": ["Tell me about healthy habits", "Health tips", "Wellness advice"],
+        "responses": ["Maintaining a healthy lifestyle is crucial. Is there a specific aspect of health or wellness you'd like advice on?", "Healthy habits contribute to overall well-being. What particular area of health are you interested in learning more about?"]
+      },
+      {
+        "tag": "science",
+        "patterns": ["Tell me about recent scientific discoveries", "Science updates", "Interesting scientific facts"],
+        "responses": ["The world of science is fascinating. Is there a specific field or topic within science that you're curious about?", "Science is always evolving. Do you have a particular scientific area you'd like to explore or learn more about?"]
+      },
+      {
+        "tag": "history",
+        "patterns": ["Tell me an interesting historical fact", "History trivia", "Historical events"],
+        "responses": ["History is filled with intriguing stories. Is there a specific time period or historical figure you're interested in?", "History provides valuable insights. What aspect of history would you like to explore or discuss?"]
+      },
+      {
+        "tag": "sports",
+        "patterns": ["Tell me about sports news", "Sports updates", "Favorite sports teams"],
+        "responses": ["Sports bring people together. Is there a specific sport or team you're interested in, or do you want general sports updates?", "Whether it's football, basketball, or another sport, there's always something happening. What sport are you curious about?"]
+      },
+      {
+        "tag": "art",
+        "patterns": ["Tell me about famous artworks", "Artistic inspiration", "Favorite art movements"],
+        "responses": ["Art has a rich history. Is there a specific artist, art movement, or type of artwork you're interested in?", "Art is diverse and inspiring. What kind of artistic expression are you in the mood for—paintings, sculptures, or something else?"]
+      },
+      {
+        "tag": "education",
+        "patterns": ["Tell me about effective learning techniques", "Education tips", "Learning strategies"],
+        "responses": ["Effective learning is key to personal development. Is there a specific subject or skill you're interested in improving?", "Learning is a lifelong journey. What area of education or skill development are you focused on right now?"]
+      },
+      {
+        "tag": "future",
+        "patterns": ["Predict the future", "What does the future hold?", "Future technology"],
+        "responses": ["While I can't predict the future, I can share insights on emerging technologies. Is there a specific aspect of the future or technology you're curious about?", "The future is uncertain, but we can explore potential trends and developments. What future-related topic interests you?"]
+      },
+      {
+        "tag": "hobbies",
+        "patterns": ["Tell me about interesting hobbies", "Hobby recommendations", "Favorite hobbies"],
+        "responses": ["Hobbies add joy to life. Is there a specific type of hobby or activity you're interested in trying or learning more about?", "Hobbies come in various forms. What kind of leisure activity or pastime are you looking for recommendations on?"]
+      },
+      {
+        "tag": "technology",
+        "patterns": ["Tell me about the latest gadgets", "Gadget recommendations", "Tech gadgets"],
+        "responses": ["Gadgets are evolving rapidly. Is there a specific type of gadget or technology you're interested in?", "The world of technology is full of exciting gadgets. What kind of device are you looking for information about?"]
+      },
+      {
+        "tag": "language",
+        "patterns": ["Recommend language learning resources", "Language tips", "Favorite languages"],
+        "responses": ["Learning a new language can be rewarding. Is there a specific language you're interested in, or do you need general language learning advice?", "Languages open up new opportunities. What language are you considering learning, and do you have any preferences?"]
+      },
+      {
+        "tag": "celebrities",
+        "patterns": ["Tell me about popular celebrities", "Celebrity news", "Favorite actors or actresses"],
+        "responses": ["Celebrities often make headlines. Is there a specific actor, actress, or public figure you're interested in, or do you want general celebrity news?", "The world of entertainment is vast. Any particular celebrity or aspect of the entertainment industry you'd like to discuss?"]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": ["Teach me a mindfulness exercise", "Mindfulness tips", "Stress relief techniques"],
+        "responses": ["Mindfulness is beneficial for well-being. Would you like a guided mindfulness exercise or tips on incorporating mindfulness into your daily life?", "Practicing mindfulness can bring calmness. What specific aspect of mindfulness are you interested in exploring?"]
+      },
+      {
+        "tag": "fashion",
+        "patterns": ["Tell me about fashion trends", "Fashion advice", "Favorite clothing brands"],
+        "responses": ["Fashion is ever-changing. Is there a specific fashion trend, style, or brand you're interested in, or do you want general fashion advice?", "Expressing oneself through fashion is unique. What aspect of the fashion world are you curious about or looking for guidance on?"]
+      },
+      {
+        "tag": "environment",
+        "patterns": ["Tell me about environmental issues", "Environmental news", "Sustainable living tips"],
+        "responses": ["Environmental awareness is crucial. Is there a specific environmental issue you're passionate about, or do you want general information on sustainable living?", "Taking care of the environment is a shared responsibility. What aspect of environmental issues are you interested in learning more about?"]
+      },
+      {
+        "tag": "space",
+        "patterns": ["Tell me about space exploration", "Space news", "Favorite celestial phenomena"],
+        "responses": ["Space is vast and mysterious. Is there a specific topic within space exploration, astronomy, or celestial phenomena that you're interested in?", "The wonders of space are captivating. What aspect of space or celestial events would you like to explore further?"]
+      },
+      {
+        "tag": "fitness",
+        "patterns": ["Tell me about effective workouts", "Fitness tips", "Healthy exercise routines"],
+        "responses": ["Staying active is important for health. Is there a specific type of workout, exercise, or fitness goal you're aiming for?", "Fitness is a personal journey. What specific area of physical activity or exercise are you interested in exploring or improving upon?"]
+      },
+      {
+        "tag": "finance",
+        "patterns": ["Financial planning tips", "Investment advice", "Budgeting suggestions"],
+        "responses": ["Financial well-being is crucial. Is there a specific aspect of financial planning, investing, or budgeting that you're interested in?", "Managing finances is a skill. What particular area of financial planning or advice are you looking to explore or improve upon?"]
+      },
+      {
+        "tag": "mind-benders",
+        "patterns": ["Give me a riddle", "Brainteasers", "Challenge my mind"],
+        "responses": ["Sure, here's a riddle for you: I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?", "Ready for a challenge? Try solving this: The more you take, the more you leave behind. What am I?"]
+      },
+      {
+        "tag": "nature",
+        "patterns": ["Tell me about wildlife", "Nature facts", "Favorite natural landscapes"],
+        "responses": ["Nature is full of wonders. Is there a specific type of wildlife, nature fact, or natural landscape you're interested in?", "Connecting with nature is refreshing. What aspect of the natural world are you curious about or fascinated by?"]
+      },
+      {
+        "tag": "coding",
+        "patterns": ["Coding challenges", "Programming puzzles", "Code snippets"],
+        "responses": ["Coding can be fun and challenging. Would you like a coding challenge, a programming puzzle, or information on a specific coding topic?", "Coding opens up a world of possibilities. What coding challenge or programming topic are you interested in exploring or testing your skills on?"]
+      },
+      {
+        "tag": "mythology",
+        "patterns": ["Tell me about mythology", "Mythological stories", "Favorite myths"],
+        "responses": ["Mythology is rich with fascinating tales. Is there a specific mythology, mythological character, or story you're interested in?", "Mythology carries timeless stories. What aspect of mythology would you like to delve into or learn more about?"]
+      },
+      {
+        "tag": "parenting",
+        "patterns": ["Parenting advice", "Tips for new parents", "Parenting challenges"],
+        "responses": ["Parenting is a rewarding journey. Is there a specific aspect of parenting advice or tips for new parents that you're seeking?", "Parenting comes with its joys and challenges. What parenting topic or advice are you interested in exploring or discussing?"]
+      },
+      {
+        "tag": "quotes",
+        "patterns": ["Share an inspirational quote", "Motivational sayings", "Favorite quotes"],
+        "responses": ["Quotes can be powerful. Is there a specific theme or type of quote you're interested in, or do you want a random inspirational quote?", "Inspirational quotes offer wisdom. What particular subject or mood are you looking for in a quote?"]
+      },
+      {
+        "tag": "science-fiction",
+        "patterns": ["Recommend a science fiction book or movie", "Sci-fi recommendations", "Favorite sci-fi themes"],
+        "responses": ["Science fiction is a fascinating genre. Is there a specific sci-fi book, movie, or theme you're interested in?", "Sci-fi explores imaginative realms. What aspect of science fiction are you looking to delve into or enjoy?"]
+      },
+      {
+        "tag": "photography",
+        "patterns": ["Photography tips", "Recommend a camera", "Favorite photography styles"],
+        "responses": ["Photography is an art form. Is there a specific photography tip, camera recommendation, or style of photography you're interested in?", "Capturing moments through photography is special. What particular aspect of photography are you looking to explore or improve upon?"]
+      },
+      {
+        "tag": "social-media",
+        "patterns": ["Social media strategies", "Tips for online presence", "Favorite social platforms"],
+        "responses": ["Navigating social media can be interesting. Is there a specific social media strategy, tip for online presence, or favorite platform you're curious about?", "Social media plays a significant role. What aspect of social media strategies or online presence are you looking to enhance or discuss?"]
+      },
+      {
+        "tag": "travel",
+        "patterns": ["Recommend a travel destination", "Tell me about your dream vacation", "Travel tips"],
+        "responses": ["While I don't travel, I can suggest exciting destinations based on your preferences. Are you looking for adventure, relaxation, or cultural experiences?", "Dream vacations vary for everyone. What type of destination or experience are you interested in for your next trip?"]
+      },
+      {
+        "tag": "history",
+        "patterns": ["Tell me an interesting historical fact", "History trivia", "Historical events"],
+        "responses": ["History is filled with intriguing stories. Is there a specific time period or historical figure you're interested in?", "History provides valuable insights. What aspect of history would you like to explore or discuss?"]
+      },
+      {
+        "tag": "sports",
+        "patterns": ["Tell me about sports news", "Sports updates", "Favorite sports teams"],
+        "responses": ["Sports bring people together. Is there a specific sport or team you're interested in, or do you want general sports updates?", "Whether it's football, basketball, or another sport, there's always something happening. What sport are you curious about?"]
+      },
+      {
+        "tag": "art",
+        "patterns": ["Tell me about famous artworks", "Artistic inspiration", "Favorite art movements"],
+        "responses": ["Art has a rich history. Is there a specific artist, art movement, or type of artwork you're interested in?", "Art is diverse and inspiring. What kind of artistic expression are you in the mood for—paintings, sculptures, or something else?"]
+      },
+      {
+        "tag": "education",
+        "patterns": ["Tell me about effective learning techniques", "Education tips", "Learning strategies"],
+        "responses": ["Effective learning is key to personal development. Is there a specific subject or skill you're interested in improving?", "Learning is a lifelong journey. What area of education or skill development are you focused on right now?"]
+      },
+      {
+        "tag": "future",
+        "patterns": ["Predict the future", "What does the future hold?", "Future technology"],
+        "responses": ["While I can't predict the future, I can share insights on emerging technologies. Is there a specific aspect of the future or technology you're curious about?", "The future is uncertain, but we can explore potential trends and developments. What future-related topic interests you?"]
+      },
+      {
+        "tag": "hobbies",
+        "patterns": ["Tell me about interesting hobbies", "Hobby recommendations", "Favorite hobbies"],
+        "responses": ["Hobbies add joy to life. Is there a specific type of hobby or activity you're interested in trying or learning more about?", "Hobbies come in various forms. What kind of leisure activity or pastime are you looking for recommendations on?"]
+      },
+      {
+        "tag": "technology",
+        "patterns": ["Tell me about the latest gadgets", "Gadget recommendations", "Tech gadgets"],
+        "responses": ["Gadgets are evolving rapidly. Is there a specific type of gadget or technology you're interested in?", "The world of technology is full of exciting gadgets. What kind of device are you looking for information about?"]
+      },
+      {
+        "tag": "language",
+        "patterns": ["Recommend language learning resources", "Language tips", "Favorite languages"],
+        "responses": ["Learning a new language can be rewarding. Is there a specific language you're interested in, or do you need general language learning advice?", "Languages open up new opportunities. What language are you considering learning, and do you have any preferences?"]
+      },
+      {
+        "tag": "mind-benders-2",
+        "patterns": ["Challenge my intellect", "Mind-twisting questions", "Brain teasers"],
+        "responses": ["Ready for a mental workout? Try this: I can fly without wings. I can cry without eyes. Wherever I go, darkness follows me. What am I?", "Feeling clever? Solve this: The more you take, the more you leave behind. What am I?"]
+      },
+      {
+        "tag": "health",
+        "patterns": ["Healthy lifestyle tips", "Wellness advice", "Fitness routines"],
+        "responses": ["Maintaining a healthy lifestyle is crucial. Is there a specific aspect of health, wellness, or fitness you'd like advice on?", "Healthy habits contribute to overall well-being. What particular area of health are you interested in learning more about?"]
+      },
+      {
+        "tag": "science",
+        "patterns": ["Tell me about recent scientific discoveries", "Science updates", "Interesting scientific facts"],
+        "responses": ["The world of science is fascinating. Is there a specific field or topic within science that you're curious about?", "Science is always evolving. Do you have a particular scientific area you'd like to explore or learn more about?"]
+      },
+      {
+        "tag": "history-2",
+        "patterns": ["Fascinating historical events", "History mysteries", "Notable figures"],
+        "responses": ["History is filled with intriguing stories. Is there a specific time period, historical event, or figure you're interested in?", "Exploring history can be captivating. What aspect of historical events or figures would you like to delve into or discuss?"]
+      },
+      {
+        "tag": "science-fiction-2",
+        "patterns": ["Favorite sci-fi authors", "Sci-fi technology", "Space exploration in fiction"],
+        "responses": ["Science fiction is a diverse genre. Is there a specific sci-fi author, technology, or space-related concept you're interested in?", "Sci-fi literature offers imaginative journeys. What aspect of science fiction would you like to explore or discuss further?"]
+      },
+      {
+        "tag": "food-2",
+        "patterns": ["Culinary adventures", "Favorite recipes", "Food recommendations"],
+        "responses": ["Food is a delightful experience. Is there a specific cuisine, recipe, or type of food you're interested in?", "Exploring different foods can be exciting. What culinary adventure are you in the mood for, or do you have any specific preferences?"]
+      },
+      {
+        "tag": "self-reflection",
+        "patterns": ["Reflect on life", "Philosophical questions", "Mindful pondering"],
+        "responses": ["Taking time for self-reflection is valuable. Is there a specific aspect of life you'd like to reflect on, or do you seek philosophical insights?", "Life often prompts deep thoughts. What specific area of self-reflection or philosophy are you interested in exploring?"]
+      },
+      {
+        "tag": "technology-2",
+        "patterns": ["Emerging tech trends", "Tech innovations", "Future of technology"],
+        "responses": ["Technology is ever-changing. Is there a specific emerging tech trend, innovation, or the future of technology you're curious about?", "The world of technology holds exciting possibilities. What aspect of tech trends or future developments are you interested in exploring or discussing?"]
+      },
+      {
+        "tag": "nature-2",
+        "patterns": ["Ecological wonders", "Nature conservation", "Favorite ecosystems"],
+        "responses": ["Nature is full of wonders. Is there a specific ecological topic, nature conservation effort, or favorite ecosystem you're interested in?", "Connecting with nature is essential. What aspect of the natural world or environmental conservation are you curious about or passionate about?"]
+      },
+      {
+        "tag": "movies-2",
+        "patterns": ["Classic films", "Movie genres", "Cinematic experiences"],
+        "responses": ["Movies offer diverse storytelling. Is there a classic film, movie genre, or cinematic experience you're interested in?", "The world of cinema is vast. What kind of movie or film genre are you in the mood for, or do you have specific preferences?"]
+      },
+      {
+        "tag": "music-2",
+        "patterns": ["Music genres", "Favorite artists", "Musical recommendations"],
+        "responses": ["Music is a universal language. Is there a specific music genre, favorite artist, or musical recommendation you're interested in?", "Exploring different music genres can be enriching. What kind of music are you in the mood for, or do you have specific preferences?"]
+      },
+      {
+        "tag": "pets-2",
+        "patterns": ["Pet care tips", "Adorable pet stories", "Favorite animal companions"],
+        "responses": ["Pets bring joy to our lives. Is there a specific pet care tip, heartwarming pet story, or favorite type of animal companion you're interested in?", "Caring for pets is a rewarding experience. What aspect of pet care or favorite animal stories would you like to explore or discuss?"]
+      },
+      {
+        "tag": "travel-2",
+        "patterns": ["Cultural travel experiences", "Off-the-beaten-path destinations", "Travel memories"],
+        "responses": ["Traveling offers cultural insights. Is there a specific cultural experience, off-the-beaten-path destination, or travel memory you're interested in?", "Exploring different cultures through travel is enriching. What aspect of cultural travel or unique destinations are you curious about or want to share?"]
+      },
+      {
+        "tag": "books-2",
+        "patterns": ["Literary classics", "Book recommendations", "Favorite authors"],
+        "responses": ["Books open new worlds. Is there a specific literary classic, book recommendation, or favorite author you're interested in?", "The world of literature is vast. What kind of books or literary classics are you in the mood for, or do you have specific preferences?"]
+      },
+      {
+        "tag": "fitness-2",
+        "patterns": ["Effective workout routines", "Fitness challenges", "Wellness goals"],
+        "responses": ["Staying active is essential for well-being. Is there a specific workout routine, fitness challenge, or wellness goal you're interested in?", "Fitness is a personal journey. What aspect of exercise, workout routines, or wellness goals are you focused on right now?"]
+      },
+      {
+        "tag": "games-2",
+        "patterns": ["Favorite video game genres", "Gaming experiences", "Game recommendations"],
+        "responses": ["Gaming offers diverse experiences. Is there a specific video game genre, gaming experience, or game recommendation you're interested in?", "The world of gaming is dynamic. What kind of video games or gaming experiences are you in the mood for, or do you have specific preferences?"]
+      },
+      {
+        "tag": "architecture",
+        "patterns": ["Architectural wonders", "Building design", "Favorite architectural styles"],
+        "responses": ["Architecture shapes our environment. Is there a specific architectural wonder, building design, or style you're interested in?", "Exploring different architectural styles can be fascinating. What aspect of architecture or building design are you curious about or admire?"]
+      },
+      {
+        "tag": "astronomy",
+        "patterns": ["Celestial wonders", "Astronomy facts", "Stargazing tips"],
+        "responses": ["The universe is vast and mysterious. Is there a specific celestial wonder, astronomy fact, or stargazing tip you're interested in?", "Stargazing offers glimpses into the cosmos. What aspect of astronomy or celestial phenomena are you curious about or want to explore further?"]
+      },
+      {
+        "tag": "languages",
+        "patterns": ["Multilingual experiences", "Language learning journeys", "Favorite phrases in different languages"],
+        "responses": ["Language is a powerful tool. Is there a multilingual experience, language learning journey, or favorite phrase in a different language you'd like to share or explore?", "Exploring different languages enriches cultural understanding. What aspect of multilingualism or language learning are you interested in discussing?"]
+      },
+      {
+        "tag": "philosophy",
+        "patterns": ["Existential questions", "Philosophical discussions", "Favorite philosophical concepts"],
+        "responses": ["Philosophy delves into profound questions. Is there a specific existential question, philosophical discussion, or favorite philosophical concept you're interested in?", "Reflecting on philosophical ideas can be enlightening. What aspect of philosophy or deep thinking intrigues you?"]
+      },
+      {
+        "tag": "technology-trends",
+        "patterns": ["Cutting-edge tech", "Future tech trends", "Tech innovations"],
+        "responses": ["Technology is advancing rapidly. Is there a specific cutting-edge tech, future technology trend, or tech innovation you're excited about?", "The world of technology is dynamic. What aspect of technology trends or future advancements are you interested in exploring or discussing?"]
+      },
+      {
+        "tag": "creativity",
+        "patterns": ["Nurturing creativity", "Artistic expression", "Creative processes"],
+        "responses": ["Creativity is a beautiful gift. Is there a specific way you nurture your creativity, artistic expression, or a creative process you'd like to share?", "Exploring different creative outlets can be inspiring. What aspect of creativity or artistic endeavors are you passionate about or interested in exploring?"]
+      },
+      {
+        "tag": "politics",
+        "patterns": ["Current political issues", "Political ideologies", "Favorite political thinkers"],
+        "responses": ["Politics shapes our society. Is there a current political issue, political ideology, or favorite political thinker you're interested in discussing or exploring?", "Navigating political landscapes can be complex. What aspect of politics or political philosophy intrigues you?"]
+      },
+      {
+        "tag": "psychology",
+        "patterns": ["Understanding the mind", "Psychological insights", "Favorite psychological theories"],
+        "responses": ["Psychology provides insights into human behavior. Is there a specific aspect of understanding the mind, psychological insight, or favorite psychological theory you're interested in?", "Exploring different psychological perspectives can be enlightening. What aspect of psychology or mental processes are you curious about or want to discuss?"]
+      },
+      {
+        "tag": "environmental-sustainability",
+        "patterns": ["Sustainable living practices", "Environmental initiatives", "Climate change awareness"],
+        "responses": ["Sustainability is crucial for our planet. Is there a specific sustainable living practice, environmental initiative, or climate change awareness topic you're passionate about or interested in?", "Taking care of the environment is a shared responsibility. What aspect of environmental sustainability or eco-friendly practices are you curious about or want to explore?"]
+      },
+      {
+        "tag": "architecture",
+        "patterns": ["Architectural wonders", "Building design", "Favorite architectural styles"],
+        "responses": ["Architecture shapes our environment. Is there a specific architectural wonder, building design, or style you're interested in?", "Exploring different architectural styles can be fascinating. What aspect of architecture or building design are you curious about or admire?"]
+      },
+      {
+        "tag": "human-rights",
+        "patterns": ["Human rights advocacy", "Social justice issues", "Favorite human rights activists"],
+        "responses": ["Advocating for human rights is essential. Is there a specific human rights cause, social justice issue, or favorite human rights activist you're interested in discussing or supporting?", "Addressing human rights issues is a collective effort. What aspect of human rights advocacy or social justice are you passionate about or want to learn more about?"]
+      },
+      {
+        "tag": "humor",
+        "patterns": ["Tell me a funny story", "Share a humorous anecdote", "Cheer me up with humor"],
+        "responses": ["Laughter is a great medicine. How about a funny story to brighten your day?", "Humor has the power to lift our spirits. Ready for a humorous anecdote or a good laugh?"]
+      },
+      {
+        "tag": "jokes",
+        "patterns": ["Knock-knock jokes", "Puns and wordplay", "Classic jokes"],
+        "responses": ["Knock, knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's freezing out here!", "Wordplay can be amusing. How about a pun or some classic jokes to tickle your funny bone?"]
+      },
+      {
+        "tag": "stand-up-comedy",
+        "patterns": ["Favorite stand-up comedians", "Stand-up comedy recommendations", "Funny stand-up moments"],
+        "responses": ["Stand-up comedy is a great source of laughter. Do you have a favorite comedian or stand-up special you enjoy?", "Exploring stand-up comedy can be entertaining. Is there a specific comedian or funny stand-up moment you'd like to discuss or hear about?"]
+      },
+      {
+        "tag": "office-humor",
+        "patterns": ["Office jokes", "Funny workplace stories", "Humorous office situations"],
+        "responses": ["Work can be funny too! Share your favorite office joke or funny workplace story.", "Navigating the workplace often leads to humorous situations. What's your go-to office joke or funny moment from work?"]
+      },
+      {
+        "tag": "animal-comedy",
+        "patterns": ["Funny animal videos", "Amusing pet stories", "Animal jokes"],
+        "responses": ["Animals bring joy and laughter. Have a favorite funny animal video or a humorous pet story to share?", "Pets and animals can be hilarious. Ready for an animal joke or amusing anecdote about our furry friends?"]
+      },
+      {
+        "tag": "music-genres",
+        "patterns": ["Favorite music genres", "Music recommendations", "Explore new music"],
+        "responses": ["Music is diverse. What are your favorite music genres, or are you looking for recommendations to explore something new?", "Discovering different music genres can be exciting. Tell me about your preferences or let me recommend something based on your taste."]
+      },
+      {
+        "tag": "travel-experiences",
+        "patterns": ["Share travel experiences", "Memorable trips", "Dream destinations"],
+        "responses": ["Traveling creates lasting memories. Care to share a memorable travel experience, or are you dreaming of a specific destination?", "Exploring new places is an adventure. What's your most unforgettable travel experience, or where do you dream of going next?"]
+      },
+      {
+        "tag": "book-lovers",
+        "patterns": ["Favorite books", "Book recommendations", "Discuss literature"],
+        "responses": ["Books open worlds of imagination. What are your favorite books, or are you looking for recommendations to dive into a new literary adventure?", "Discussing literature is enriching. Share your favorite books, or let me recommend something based on your interests."]
+      },
+      {
+        "tag": "health-wellness",
+        "patterns": ["Wellness routines", "Healthy habits", "Mind-body balance"],
+        "responses": ["Wellness is essential. Share your wellness routines or explore tips for maintaining a healthy mind-body balance.", "Establishing healthy habits contributes to overall well-being. What wellness practices are you currently focusing on, or do you need advice on cultivating a healthier lifestyle?"]
+      },
+      {
+        "tag": "coding-world",
+        "patterns": ["Coding adventures", "Programming languages", "Tech challenges"],
+        "responses": ["Coding is an adventure. Share your coding experiences or discuss your favorite programming languages and tech challenges.", "The coding world is dynamic. What coding adventures have you embarked on, or are you curious about specific programming languages and tech challenges?"]
+      },
+      {
+        "tag": "foodie-talk",
+        "patterns": ["Culinary delights", "Favorite recipes", "Foodie recommendations"],
+        "responses": ["Food is a delight. Share your culinary delights, favorite recipes, or let's talk about must-try dishes from around the world.", "Exploring the world through food is a treat. What are your favorite recipes, or are you looking for foodie recommendations to satisfy your taste buds?"]
+      },
+      {
+        "tag": "history-buffs",
+        "patterns": ["Historical insights", "Ancient civilizations", "Favorite historical periods"],
+        "responses": ["History holds rich insights. Share your knowledge or interests in ancient civilizations and historical periods.", "History buffs appreciate the tales of the past. What historical insights do you have, or which historical periods captivate your interest the most?"]
+      },
+      {
+        "tag": "fitness-motivation",
+        "patterns": ["Fitness motivation", "Workout routines", "Exercise goals"],
+        "responses": ["Staying motivated is key to fitness. Share your fitness motivation, workout routines, or discuss your exercise goals.", "Fitness is a journey. What keeps you motivated, and are you working towards specific exercise goals or routines?"]
+      },
+      {
+        "tag": "art-enthusiast",
+        "patterns": ["Artistic expressions", "Favorite artists", "Art appreciation"],
+        "responses": ["Art is a form of expression. Share your artistic interests, favorite artists, or let's discuss the beauty of different art forms.", "Being an art enthusiast is a unique journey. What forms of artistic expression resonate with you, or who are your favorite artists?"]
+      },
+      {
+        "tag": "science-enthusiast",
+        "patterns": ["Scientific wonders", "Favorite scientific discoveries", "Curious scientific minds"],
+        "responses": ["Science opens doors to wonders. Share your enthusiasm for scientific discoveries or discuss your favorite aspects of the vast world of science.", "Curiosity drives scientific minds. What scientific wonders fascinate you the most, or do you have a favorite discovery you'd like to talk about?"]
+      },
+      {
+        "tag": "movie-buff",
+        "patterns": ["Favorite films", "Movie recommendations", "Cinematic discussions"],
+        "responses": ["Movies are a cinematic journey. Share your favorite films or discuss the latest releases and cinematic trends.", "Being a movie buff is a joy. What are your all-time favorite films, or are you seeking recommendations for your next movie night?"]
+      },
+      {
+        "tag": "gaming-world",
+        "patterns": ["Favorite video games", "Gaming experiences", "Game recommendations"],
+        "responses": ["Gaming is an immersive experience. Share your favorite video games or discuss memorable gaming experiences.", "The gaming world is vast. What are your go-to video games, or are you looking for recommendations for your next gaming adventure?"]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": ["Mindfulness practices", "Stress relief techniques", "Mindful living"],
+        "responses": ["Mindfulness brings peace. Share your mindfulness practices or explore stress relief techniques for a more mindful lifestyle.", "Incorporating mindfulness enhances well-being. What mindfulness practices do you follow, or are you looking for stress relief techniques to incorporate into your routine?"]
+      },
+      {
+        "tag": "fashionista",
+        "patterns": ["Fashion trends", "Favorite styles", "Wardrobe essentials"],
+        "responses": ["Fashion is an expression of self. Share your favorite fashion trends, discuss your go-to styles, or explore wardrobe essentials.", "Being a fashionista is about embracing style. What fashion trends resonate with you, or are you looking for wardrobe advice and style inspiration?"]
+      },
+      {
+        "tag": "education",
+        "patterns": ["Learning journeys", "Educational goals", "Favorite subjects"],
+        "responses": ["Education is a lifelong journey. Share your learning experiences, discuss educational goals, or explore your favorite subjects.", "Continuous learning is empowering. What educational goals are you pursuing, or do you have favorite subjects you'd like to delve into or discuss?"]
+      },
+      {
+        "tag": "technology-enthusiast",
+        "patterns": ["Cutting-edge tech", "Tech innovations", "Future tech trends"],
+        "responses": ["Technology is ever-evolving. Share your excitement for cutting-edge tech, discuss tech innovations, or explore future tech trends.", "Being a technology enthusiast is thrilling. What specific aspects of technology excite you, or are you curious about the latest innovations and future trends?"]
+      },
+      {
+        "tag": "science-fiction",
+        "patterns": ["Favorite sci-fi books", "Sci-fi movie recommendations", "Exploring sci-fi themes"],
+        "responses": ["Science fiction sparks the imagination. Share your favorite sci-fi books, discuss sci-fi movies, or explore captivating sci-fi themes.", "The world of science fiction is vast. What sci-fi books and movies do you enjoy, or are you interested in exploring different sci-fi themes?"]
+      },
+      {
+        "tag": "pet-lover",
+        "patterns": ["Pet stories", "Adorable pet moments", "Pet care advice"],
+        "responses": ["Pets bring joy to our lives. Share heartwarming pet stories, discuss adorable pet moments, or explore pet care advice.", "Being a pet lover is special. What pets do you have, or are you looking for pet care tips and advice?"]
+      },
+      {
+        "tag": "entrepreneurship",
+        "patterns": ["Startup journeys", "Business insights", "Entrepreneurial success stories"],
+        "responses": ["Entrepreneurship is a dynamic journey. Share your startup experiences, discuss business insights, or explore entrepreneurial success stories.", "Navigating the world of entrepreneurship is inspiring. What startup journeys have you undertaken, or are you seeking business insights and success stories?"]
+      },
+      {
+        "tag": "philanthropy",
+        "patterns": ["Social impact initiatives", "Philanthropic endeavors", "Favorite charitable causes"],
+        "responses": ["Philanthropy creates positive change. Share your involvement in social impact initiatives, discuss philanthropic endeavors, or explore your favorite charitable causes.", "Contributing to the greater good is meaningful. What philanthropic initiatives are you passionate about, or are you looking for ways to get involved in charitable causes?"]
+      },
+      {
+        "tag": "philosophical-ponderings",
+        "patterns": ["Existential musings", "Philosophical inquiries", "Deep reflections"],
+        "responses": ["Philosophy invites profound thoughts. What existential questions or deep reflections are on your mind?", "Let's delve into the realms of philosophy. Share your philosophical musings or explore existential questions."]
+      },
+      {
+        "tag": "space-exploration",
+        "patterns": ["Cosmic wonders", "Space exploration discussions", "Astronomy enthusiasts"],
+        "responses": ["The cosmos is awe-inspiring. Discuss cosmic wonders, space exploration, or connect with fellow astronomy enthusiasts.", "Embark on a cosmic journey. What fascinates you about space exploration, or do you have questions about the mysteries of the universe?"]
+      },
+      {
+        "tag": "futuristic-visions",
+        "patterns": ["Imagining the future", "Futuristic concepts", "Technology in tomorrow's world"],
+        "responses": ["The future holds endless possibilities. Share your visions of the future, discuss futuristic concepts, or explore the role of technology in tomorrow's world.", "Let's envision the future together. What futuristic ideas intrigue you, or how do you see technology shaping our world in the years to come?"]
+      },
+      {
+        "tag": "mind-bending-riddles",
+        "patterns": ["Challenging riddles", "Brain-teasers", "Riddle me this"],
+        "responses": ["Prepare for a mental challenge. Solve mind-bending riddles, tackle brain-teasers, or share your own challenging puzzles.", "Riddles add a touch of mystery. Ready for a brain workout? Try solving challenging riddles or share your favorite mind-benders."]
+      },
+      {
+        "tag": "historical-conundrums",
+        "patterns": ["Historical mysteries", "Unsolved historical puzzles", "Conundrums of the past"],
+        "responses": ["History is filled with mysteries. Discuss historical enigmas, explore unsolved puzzles from the past, or share your thoughts on historical conundrums.", "Unravel the mysteries of history. What historical puzzles fascinate you, or do you have theories about unsolved mysteries from the past?"]
+      },
+      {
+        "tag": "language-evolution",
+        "patterns": ["Evolution of languages", "Linguistic transformations", "Language and culture"],
+        "responses": ["Languages evolve over time. Explore the evolution of languages, discuss linguistic transformations, or delve into the connection between language and culture.", "Language is dynamic. How do you perceive the evolution of languages, and what role does language play in shaping cultural identities?"]
+      },
+      {
+        "tag": "cybersecurity-insights",
+        "patterns": ["Cybersecurity discussions", "Digital safety tips", "Online privacy matters"],
+        "responses": ["Navigating the digital realm is crucial. Discuss cybersecurity, explore digital safety tips, or share thoughts on why online privacy matters.", "Cybersecurity is everyone's concern. What are your thoughts on digital safety, or do you have questions about protecting your online presence?"]
+      },
+      {
+        "tag": "quantum-physics",
+        "patterns": ["Quantum physics concepts", "Quantum phenomena", "Exploring quantum mysteries"],
+        "responses": ["Quantum physics delves into the mysterious. Explore quantum concepts, discuss phenomena at the quantum level, or share your thoughts on the mysteries of quantum physics.", "The quantum realm is fascinating. What intrigues you about quantum physics, or do you have questions about the strange and intriguing world of quantum mechanics?"]
+      },
+      {
+        "tag": "emerging-trends",
+        "patterns": ["Emerging trends", "Innovations on the horizon", "Trends shaping the future"],
+        "responses": ["The future is shaped by emerging trends. Discuss innovations on the horizon, explore trends shaping the future, or share your insights on what's next.", "Stay ahead of the curve. What emerging trends catch your eye, or are you curious about the innovations that will shape our future?"]
+      },
+      {
+        "tag": "innovation-spotlight",
+        "patterns": ["Innovative solutions", "Creativity in problem-solving", "Spotlight on groundbreaking ideas"],
+        "responses": ["Innovation transforms challenges into opportunities. Discuss innovative solutions, explore creativity in problem-solving, or shine a spotlight on groundbreaking ideas.", "Creativity sparks innovation. What innovative solutions have caught your attention, or are you excited about the creative approaches to problem-solving?"]
+      },
+      {
+        "tag": "psychological-thrills",
+        "patterns": ["Psychological thrillers", "Mind-bending movies", "Twists in storytelling"],
+        "responses": ["Explore the realm of psychological thrills. Share your favorite psychological thriller movies, discuss mind-bending plots, or unravel the twists in storytelling.", "Psychological thrillers captivate the mind. What are your go-to movies in this genre, or do you enjoy the suspenseful twists in storytelling?"]
+      },
+      {
+        "tag": "culinary-adventures",
+        "patterns": ["Culinary explorations", "Food journeys", "Global gastronomy"],
+        "responses": ["Embark on culinary adventures. Share your culinary explorations, discuss food journeys, or delve into the rich tapestry of global gastronomy.", "Food is a journey. What culinary explorations have you undertaken, or are you interested in the diverse world of global gastronomy?"]
+      },
+      {
+        "tag": "mindful-tech-usage",
+        "patterns": ["Digital well-being", "Mindful tech habits", "Balancing screen time"],
+        "responses": ["Maintain digital well-being. Discuss mindful tech habits, explore ways to balance screen time, or share your thoughts on fostering a healthy relationship with technology.", "Tech is integral to our lives. How do you practice mindful tech usage, or are you seeking tips on balancing screen time for overall well-being?"]
+      },
+      {
+        "tag": "urban-exploration",
+        "patterns": ["City adventures", "Urban photography", "Exploring metropolitan life"],
+        "responses": ["Cities are full of stories. Share your city adventures, discuss urban photography, or explore the dynamics of metropolitan life.", "Urban exploration is a journey. What city adventures have you embarked on, or do you enjoy capturing the essence of urban life through photography?"]
+      },
+      {
+        "tag": "mindfulness-meditation",
+        "patterns": ["Mindfulness meditation", "Guided meditation practices", "Inner peace journeys"],
+        "responses": ["Cultivate inner peace through mindfulness meditation. Share your meditation practices, explore guided meditations, or discuss your journey toward inner peace.", "Mindfulness transforms lives. What meditation practices resonate with you, or are you looking for guided meditation experiences to enhance your mindfulness journey?"]
+      },
+      {
+        "tag": "cryptocurrency-insights",
+        "patterns": ["Crypto market discussions", "Blockchain insights", "Cryptocurrency trends"],
+        "responses": ["Navigate the crypto world. Discuss cryptocurrency market trends, explore blockchain insights, or share your thoughts on the evolving landscape of cryptocurrencies.", "Cryptocurrency is a dynamic space. What are your insights into the crypto market, or are you curious about the latest trends in blockchain technology?"]
+      },
+      {
+        "tag": "space-travel",
+        "patterns": ["Future of space travel", "Interstellar explorations", "Space tourism aspirations"],
+        "responses": ["The future holds cosmic possibilities. Discuss the future of space travel, explore interstellar aspirations, or share your thoughts on the potential of space tourism.", "Space travel is on the horizon. What excites you about the future of space exploration, or do you have aspirations for interstellar journeys and space tourism?"]
+      },
+      {
+        "tag": "robotics-and-ai",
+        "patterns": ["Advancements in robotics", "AI applications", "Ethical considerations in AI"],
+        "responses": ["The world of robotics and AI is evolving. Discuss advancements in robotics, explore AI applications, or delve into ethical considerations in the field of artificial intelligence.", "Robotics and AI shape the future. What advancements in robotics and AI interest you, or do you have thoughts on the ethical implications of artificial intelligence?"]
+      },
+      {
+        "tag": "virtual-reality",
+        "patterns": ["Immersive VR experiences", "Virtual worlds exploration", "Future of virtual reality"],
+        "responses": ["Step into the virtual realm. Share your immersive VR experiences, explore virtual worlds, or discuss the potential future of virtual reality.", "Virtual reality offers endless possibilities. What VR experiences have captivated you, or are you interested in discussing the evolving landscape of virtual worlds?"]
+      },
+      {
+        "tag": "biohacking",
+        "patterns": ["Biohacking endeavors", "Human enhancement discussions", "Exploring biohacking technologies"],
+        "responses": ["Biohacking pushes boundaries. Share your biohacking endeavors, discuss human enhancement possibilities, or explore the latest technologies in the field of biohacking.", "Biohacking transforms possibilities. What biohacking technologies intrigue you, or do you have personal experiences in the realm of human enhancement?"]
+      },
+      {
+        "tag": "astrophysics",
+        "patterns": ["Astrophysics discussions", "Celestial phenomena", "Cosmological mysteries"],
+        "responses": ["Astrophysics delves into the cosmos. Discuss astrophysics concepts, explore celestial phenomena, or ponder the cosmological mysteries of the universe.", "The cosmos holds secrets. What intrigues you about astrophysics, or are you interested in discussing celestial phenomena and cosmological wonders?"]
+      },
+      {
+        "tag": "quantum-computing",
+        "patterns": ["Quantum computing concepts", "Applications of quantum algorithms", "Future of quantum technology"],
+        "responses": ["Quantum computing is revolutionizing tech. Discuss quantum computing concepts, explore applications of quantum algorithms, or speculate on the future of quantum technology.", "Quantum computing is a paradigm shift. What interests you about quantum computing, or are you curious about the applications of quantum algorithms and the evolving landscape of quantum tech?"]
+      },
+      {
+        "tag": "neuroscience",
+        "patterns": ["Neuroscientific insights", "Brain function discussions", "Cognitive processes"],
+        "responses": ["Neuroscience unravels the mind. Share neuroscientific insights, discuss brain function, or explore the intricate cognitive processes that shape human experience.", "The brain is a marvel. What aspects of neuroscience intrigue you, or are you interested in exploring discussions about brain function and cognitive processes?"]
+      },
+      {
+        "tag": "biotechnology",
+        "patterns": ["Advancements in biotechnology", "Gene editing technologies", "Biotech innovations"],
+        "responses": ["Biotechnology transforms life sciences. Discuss advancements in biotechnology, explore gene editing technologies, or delve into the innovative developments in the field of biotech.", "Biotechnology shapes the future. What intrigues you about biotech advancements, or are you curious about gene editing technologies and the latest innovations in the biotech sector?"]
+      },
+      {
+        "tag": "environmental-science",
+        "patterns": ["Environmental science insights", "Eco-system dynamics", "Climate change discussions"],
+        "responses": ["Environmental science informs sustainability. Share insights into environmental science, discuss eco-system dynamics, or engage in conversations about the impacts of climate change.", "Environmental science is crucial. What aspects of environmental science interest you, or are you keen on discussing eco-system dynamics and the challenges posed by climate change?"]
+      },
+      {
+        "tag": "particle-physics",
+        "patterns": ["Particle physics discoveries", "Subatomic world explorations", "High-energy physics"],
+        "responses": ["Particle physics delves into the subatomic. Discuss discoveries in particle physics, explore the intricacies of the subatomic world, or ponder the mysteries of high-energy physics.", "The subatomic world is fascinating. What intrigues you about particle physics discoveries, or are you interested in exploring discussions on the complexities of high-energy physics?"]
+      },
+      {
+        "tag": "oceanography",
+        "patterns": ["Oceanographic explorations", "Marine biology discussions", "Ocean health"],
+        "responses": ["Oceanography unveils marine mysteries. Share oceanographic explorations, discuss marine biology, or engage in conversations about the health of our oceans.", "The oceans are diverse ecosystems. What aspects of oceanography interest you, or are you keen on discussing marine biology and the well-being of our oceans?"]
+      },
+      {
+        "tag": "materials-science",
+        "patterns": ["Materials science innovations", "Nanotechnology applications", "Smart materials"],
+        "responses": ["Materials science shapes technology. Discuss innovations in materials science, explore applications of nanotechnology, or delve into the realm of smart materials.", "Materials science transforms industries. What interests you about materials science innovations, or are you curious about nanotechnology applications and the development of smart materials?"]
+      },
+      {
+        "tag": "climate-science",
+        "patterns": ["Climate science research", "Global climate patterns", "Sustainability initiatives"],
+        "responses": ["Climate science guides environmental policies. Share climate science research, discuss global climate patterns, or engage in conversations about sustainability initiatives.", "Understanding climate patterns is vital. What aspects of climate science intrigue you, or are you interested in discussing global climate patterns and sustainable initiatives?"]
+      },
+      {
+        "tag": "robotics-engineering",
+        "patterns": ["Robotics engineering advancements", "Autonomous systems", "Human-robot collaboration"],
+        "responses": ["Robotics engineering revolutionizes automation. Discuss advancements in robotics engineering, explore autonomous systems, or ponder the dynamics of human-robot collaboration.", "Robotics engineering shapes the future. What intrigues you about robotics advancements, or are you curious about the applications of autonomous systems and the evolving landscape of human-robot collaboration?"]
+      },
+      {
+        "tag": "study-tips",
+        "patterns": ["Effective study techniques", "Study strategies", "Optimizing study sessions"],
+        "responses": ["Studying efficiently is key. Share your effective study techniques, discuss study strategies, or explore ways to optimize study sessions.", "Study smarter, not harder. What study techniques work best for you, or are you seeking advice on optimizing your study sessions?"]
+      },
+      {
+        "tag": "student-life",
+        "patterns": ["Navigating student life", "Balancing academics and personal life", "Student experiences"],
+        "responses": ["Student life is a journey. Share your experiences, discuss balancing academics and personal life, or navigate the challenges and joys of being a student.", "Being a student is a unique experience. How do you balance academics and personal life, or what aspects of student life would you like to explore and discuss?"]
+      },
+      {
+        "tag": "career-planning",
+        "patterns": ["Career planning advice", "Choosing a major", "Exploring future career paths"],
+        "responses": ["Planning your career journey is essential. Share career planning advice, discuss choosing a major, or explore potential career paths for your future.", "Your career path awaits. What career planning challenges are you facing, or are you exploring different majors and considering future career paths?"]
+      },
+      {
+        "tag": "online-learning",
+        "patterns": ["Online learning tips", "E-learning experiences", "Digital education discussions"],
+        "responses": ["Online learning offers unique opportunities. Share your tips for online learning, discuss e-learning experiences, or engage in conversations about the evolving landscape of digital education.", "Adapting to online learning is crucial. What tips do you have for successful online learning, or are you curious about e-learning experiences and digital education trends?"]
+      },
+      {
+        "tag": "exam-preparation",
+        "patterns": ["Effective exam preparation", "Test-taking strategies", "Managing exam stress"],
+        "responses": ["Preparation is key to success. Share your effective exam preparation techniques, discuss test-taking strategies, or explore ways to manage exam stress.", "Exams can be challenging. What strategies do you use for effective exam preparation, or are you looking for advice on managing exam stress?"]
+      },
+      {
+        "tag": "student-organizations",
+        "patterns": ["Involvement in student organizations", "Leadership roles on campus", "Community engagement"],
+        "responses": ["Student organizations enrich campus life. Share your involvement, discuss leadership roles on campus, or explore the impact of student organizations on community engagement.", "Engaging with student organizations is rewarding. What student organizations are you part of, or are you interested in exploring leadership roles and community engagement opportunities on campus?"]
+      },
+      {
+        "tag": "study-abroad",
+        "patterns": ["Studying abroad experiences", "International education", "Cultural immersion"],
+        "responses": ["Studying abroad is a transformative experience. Share your experiences, discuss international education, or explore the joys and challenges of cultural immersion.", "Embark on a global journey. What studying abroad experiences have you had, or are you curious about international education and cultural immersion?"]
+      },
+      {
+        "tag": "academic-goals",
+        "patterns": ["Setting academic goals", "Tracking progress", "Motivation for success"],
+        "responses": ["Setting goals fuels academic success. Share your academic goals, discuss tracking progress, or explore ways to stay motivated on the path to success.", "Your academic journey is unique. What academic goals are you working towards, or are you seeking motivation and strategies for tracking your progress?"]
+      },
+      {
+        "tag": "student-wellness",
+        "patterns": ["Student well-being", "Mental health in college", "Balancing wellness"],
+        "responses": ["Well-being is paramount. Share insights on student wellness, discuss mental health in college, or explore strategies for balancing wellness amidst academic demands.", "Prioritize your well-being as a student. What wellness practices do you follow, or are you seeking advice on maintaining mental health and balance during your college journey?"]
+      },
+      {
+        "tag": "college-admissions",
+        "patterns": ["College admissions guidance", "Application tips", "Choosing the right college"],
+        "responses": ["Navigating college admissions is a crucial step. Share guidance, discuss application tips, or explore factors to consider when choosing the right college for your academic journey.", "Choosing the right college is a big decision. What questions do you have about college admissions, or are you seeking advice on the application process and selecting the perfect college?"]
+      },
+      {
+        "tag": "philosophical-inquiries",
+        "patterns": ["Deep philosophical questions", "Existential ponderings", "Philosophy discussions"],
+        "responses": ["Philosophy explores profound questions. Share your inquiries, discuss existential ponderings, or engage in philosophical discussions.", "Dive into the world of philosophy. What deep questions or existential musings are on your mind, or are you interested in exploring various philosophical topics?"]
+      },
+      {
+        "tag": "philosophical-concepts",
+        "patterns": ["Key philosophical concepts", "Philosophical principles", "Foundations of philosophy"],
+        "responses": ["Philosophy is built on foundational concepts. Share key philosophical principles, discuss the core concepts of philosophy, or explore the foundations that shape philosophical thinking.", "Understanding philosophical concepts is enlightening. What principles resonate with you, or are you curious about exploring the foundational ideas that underpin philosophy?"]
+      },
+      {
+        "tag": "philosophical-debates",
+        "patterns": ["Debates in philosophy", "Controversial philosophical topics", "Ethical dilemmas"],
+        "responses": ["Philosophical debates spark intellectual discourse. Share your perspectives on debates, discuss controversial philosophical topics, or explore ethical dilemmas that challenge moral reasoning.", "Engage in philosophical discourse. What debates or controversial topics intrigue you, or are you interested in exploring ethical dilemmas and the complexities of moral reasoning?"]
+      },
+      {
+        "tag": "philosophy-of-mind",
+        "patterns": ["Philosophy of mind", "Consciousness explorations", "Mind-body problem"],
+        "responses": ["The philosophy of mind delves into consciousness. Share your thoughts, discuss explorations of consciousness, or ponder the mind-body problem that has fascinated philosophers for centuries.", "Explore the mysteries of the mind. What aspects of the philosophy of mind interest you, or are you intrigued by discussions on consciousness and the mind-body problem?"]
+      },
+      {
+        "tag": "ethics-and-morality",
+        "patterns": ["Ethical philosophy", "Morality discussions", "Moral dilemmas"],
+        "responses": ["Ethics and morality are fundamental in philosophy. Share your ethical perspectives, discuss morality, or explore moral dilemmas that challenge ethical reasoning.", "Philosophy guides ethical decisions. What ethical principles do you value, or are you interested in discussions about morality and facing moral dilemmas?"]
+      },
+      {
+        "tag": "political-philosophy",
+        "patterns": ["Political philosophy", "Government and governance discussions", "Philosophy of justice"],
+        "responses": ["Political philosophy shapes governance. Share your perspectives on political philosophy, discuss government structures, or explore the philosophy of justice and its implications.", "Navigate the realm of political philosophy. What political ideologies interest you, or are you curious about the philosophy behind governance structures and the concept of justice?"]
+      },
+      {
+        "tag": "philosophy-of-science",
+        "patterns": ["Philosophy of science", "Scientific methodology discussions", "Epistemological questions"],
+        "responses": ["Philosophy of science explores the nature of knowledge. Share your thoughts, discuss scientific methodologies, or ponder epistemological questions that intersect with the scientific process.", "Philosophy enriches scientific understanding. What philosophical aspects of science intrigue you, or are you interested in discussions about scientific methodologies and epistemological inquiries?"]
+      },
+      {
+        "tag": "philosophy-of-language",
+        "patterns": ["Philosophy of language", "Semantics and linguistic discussions", "Language as a tool of thought"],
+        "responses": ["The philosophy of language delves into linguistic meanings. Share your perspectives, discuss semantics, or explore the role of language as a tool of thought in philosophical inquiry.", "Language shapes philosophical expression. What linguistic discussions interest you, or are you intrigued by the philosophy of language and its impact on thought processes?"]
+      },
+      {
+        "tag": "philosophy-and-religion",
+        "patterns": ["Philosophy and religion intersections", "Religious philosophy discussions", "Existential questions in faith"],
+        "responses": ["Philosophy and religion intersect in profound ways. Share your reflections, discuss religious philosophy, or explore existential questions within the context of faith.", "Explore the connections between philosophy and religion. What intersections intrigue you, or are you interested in discussing religious philosophy and exploring existential questions related to faith?"]
+      },
+      {
+        "tag": "eastern-philosophy",
+        "patterns": ["Eastern philosophy", "Zen and Taoism discussions", "Ancient Eastern philosophical teachings"],
+        "responses": ["Eastern philosophy offers unique perspectives. Share insights, discuss Zen and Taoism, or explore the ancient teachings of Eastern philosophy that inspire introspection and mindfulness.", "Delve into the wisdom of Eastern philosophy. What aspects of Eastern philosophy interest you, or are you curious about discussions on Zen, Taoism, and the timeless teachings of the East?"]
+      }
+    
+      
+    ]
+}
